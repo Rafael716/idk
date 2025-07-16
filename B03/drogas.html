@@ -10,6 +10,7 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
+      margin: 0;
     }
 
     .Bloque {
@@ -19,45 +20,29 @@
       border-radius: 20%;
       transition: transform 0.5s ease;
       margin: 10px;
-    }
-
-    .translateX:hover {
-      transform: translateY(-50px);
+      overflow: hidden;
     }
 
     .rotate:hover {
       transform: rotate(360deg);
     }
 
-    /* Colores */
-    .rojo {
-      background-color: red;
-    }
-
-    .azul {
-      background-color: blue;
-    }
-
-    .verde {
-      background-color: green;
-    }
-
-    .amarillo {
-      background-color: yellow;
-    }
-
-    .naranja {
-      background-color: orange;
+    .Bloque img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
   </style>
 </head>
 <body>
 
-  <div class="Bloque rotate rojo"></div>
-  <div class="Bloque rotate azul"></div>
-  <div class="Bloque rotate verde"></div>
-  <div class="Bloque rotate amarillo"></div>
-  <div class="Bloque rotate naranja"></div>
+  <!-- Reemplaza la ruta con la tuya -->
+  <div class="Bloque rotate"><img src="gato7xd.png" alt="Imagen 1"></div>
+  <div class="Bloque rotate"><img src="gato7xd.png" alt="Imagen 2"></div>
+  <div class="Bloque rotate"><img src="gato7xd.png" alt="Imagen 3"></div>
+  <div class="Bloque rotate"><img src="gato7xd.png" alt="Imagen 4"></div>
+  <div class="Bloque rotate"><img src="gato7xd.png" alt="Imagen 5"></div>
 
 </body>
 </html>
